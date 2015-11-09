@@ -12,5 +12,8 @@
   "devDependencies": {
     "beefy": "^2.1.5",
     "browserify": "^12.0.1"
+  },
+  "dependencies": {
+    "scroll-to": "0.0.2"
   }
 }
