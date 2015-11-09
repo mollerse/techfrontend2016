@@ -110,14 +110,19 @@ h1, h2, h3 {
   100%{ opacity:0.8; }
 }
 
-.entry:nth-child(2n+1) {
+.entry:nth-child(3n+1) {
   color: #101010;
   background: rgba(9, 255, 195, 0.85);
 }
 
-.entry:nth-child(2n) {
+.entry:nth-child(3n) {
   color: #101010;
   background: rgba(255, 5, 243, 0.85);
+}
+
+.entry:nth-child(3n+2) {
+  color: #FFF;
+  background: rgba(16, 16, 16, 0.95);
 }
 
 .entry h3 {
