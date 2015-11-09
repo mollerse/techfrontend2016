@@ -85,7 +85,7 @@ h1, h2, h3 {
 
 .from:before {
   display: block;
-  content: '--';
+  content: '—';
   position: absolute;
   left: -2rem;
 }
@@ -111,7 +111,7 @@ h1, h2, h3 {
 }
 
 .intro header {
-  animation: flicker 30ms infinite, jerk 50ms infinite;
+  animation: flicker 30ms infinite;
 }
 
 @keyframes flicker {
@@ -120,14 +120,8 @@ h1, h2, h3 {
   100%{ opacity:0.8; }
 }
 
-@keyframes jerk {
-  50% { left:1px; }
-  51% { left:0; }
-}
-
 .intro h1, .intro h2 {
   animation: jerkwhole 5s infinite;
-  position:relative;
 }
 
 @keyframes jerkwhole {
