@@ -111,6 +111,7 @@ h1, h2, h3 {
 }
 
 .entry:nth-child(2n+1) {
+  color: #101010;
   background: rgba(9, 255, 195, 0.85);
 }
 
@@ -123,4 +124,8 @@ h1, h2, h3 {
   font-family: streamster;
   font-size: 5rem;
   font-weight: normal;
+}
+
+.entry p:first-of-type {
+  margin-top: -1.5rem;
 }
