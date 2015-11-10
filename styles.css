@@ -179,5 +179,10 @@ li em {
 }
 
 a {
-  color: #FF05F3;
+  color: inherit;
+}
+
+iframe {
+  position: absolute;
+  bottom: 0;
 }
