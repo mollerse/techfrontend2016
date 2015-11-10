@@ -153,3 +153,7 @@ li p {
 li em {
   display: block;
 }
+
+.topics li {
+  margin-top: 15px;
+}
