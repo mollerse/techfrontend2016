@@ -173,3 +173,7 @@ li em {
 .two-column section.fade-in {
   opacity: 1;
 }
+
+a {
+  color: #FF05F3;
+}
