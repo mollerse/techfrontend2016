@@ -1,7 +1,16 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var vivus = require('vivus');
 
-new vivus('background', {duration: 100, type: 'oneByOne', start: 'autostart'});
+new vivus('background', {duration: 50, type: 'oneByOne', start: 'autostart'});
+
+var sections = document.querySelectorAll('.two-column section');
+setTimeout(function() {
+  sections[0].classList.add('fade-in');
+}, 300);
+
+setTimeout(function() {
+  sections[1].classList.add('fade-in');
+}, 600);
 
 },{"vivus":2}],2:[function(require,module,exports){
 /**
