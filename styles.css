@@ -172,3 +172,12 @@ blockquote {
 .entry p, blockquote {
   max-width: 80ch;
 }
+
+li p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+li em {
+  display: block;
+}
