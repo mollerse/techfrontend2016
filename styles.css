@@ -51,7 +51,7 @@ h1, h2, h3 {
 }
 
 .entry h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .entry  h3 {
@@ -139,6 +139,11 @@ li em {
   display: block;
 }
 
+.q-a h3 {
+  font-size: 2rem;
+}
+
+
 .topics li {
   margin-top: 20px;
 }
@@ -147,4 +152,10 @@ li em {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.deadline h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FF05F3;
 }
