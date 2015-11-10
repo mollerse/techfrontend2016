@@ -19,6 +19,5 @@ setTimeout(function() {
     iframe.height = 1;
     iframe.src = 'http://presentcat.com';
     document.body.appendChild(iframe);
-    // Burde settes til 300 000 (5m) i prod
-}, 1000*10);
+}, 1000*60*5);
 
