@@ -165,12 +165,10 @@ ul {
   z-index: 1;
 }
 
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
+blockquote {
+  margin: 0 auto;
 }
 
-.cf:after {
-    clear: both;
+.entry p, blockquote {
+  max-width: 80ch;
 }
