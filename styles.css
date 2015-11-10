@@ -149,3 +149,13 @@ li em {
   text-align: center;
   color: #FF05F3;
 }
+
+/*some fading effects*/
+.two-column section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.two-column section.fade-in {
+  opacity: 1;
+}
