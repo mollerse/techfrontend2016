@@ -1,4 +1,5 @@
 var scrollTo = require('scroll-to');
+var vivus = require('vivus');
 
 function handleDown(e) {
   e.preventDefault();
@@ -11,3 +12,5 @@ function handleDown(e) {
 
 document.querySelector('.down a').addEventListener('click', handleDown);
 document.querySelector('.down a').addEventListener('touchdown', handleDown);
+
+new vivus('background', {duration: 100, type: 'oneByOne'});
