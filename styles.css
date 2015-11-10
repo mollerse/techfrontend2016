@@ -138,3 +138,12 @@ li p {
 li em {
   display: block;
 }
+
+.topics li {
+  margin-top: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
