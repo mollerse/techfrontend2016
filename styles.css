@@ -152,6 +152,10 @@ li em {
   margin-top: 20px;
 }
 
+.topics li:first-child {
+  margin-top: 50px;
+}
+
 .intro-text {
   text-align: center;
   margin: 0 auto;
