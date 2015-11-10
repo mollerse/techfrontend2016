@@ -24,7 +24,7 @@ h1, h2, h3 {
 }
 
 .intro {
-  background: rgba(16, 16, 16, 0.95);
+  background: rgba(16, 16, 16, 0.90);
   position: relative;
   height: 100vh;
   width: 100%;
@@ -42,23 +42,40 @@ h1, h2, h3 {
 }
 
 .intro h1 {
-  color: #FF05F3;
-  display: block;
   font-size: 10rem;
-  font-family: streamster;
-  font-weight: normal;
   margin: auto;
-  margin-bottom: 0;
 }
 
 .intro h2 {
-  display: block;
-  color: #09FFC3;
   font-size: 2.5rem;
-  font-weight: normal;
-  font-style: italic;
   margin: auto;
   margin-top: -2.5rem;
+}
+
+.entry h2 {
+  font-size: 6rem;
+}
+
+.entry  h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro h1, .entry h2 {
+  color: #FF05F3;
+  display: block;
+  font-family: streamster;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+}
+
+.intro h2, .entry h3 {
+  display: block;
+  color: #09FFC3;
+  font-weight: normal;
+  font-style: italic;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
 }
 
 .intro .down {
@@ -71,28 +88,13 @@ h1, h2, h3 {
   font-size: 2.5rem;
   font-family: monospace;
   text-decoration: none;
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
 }
 
-.motivation, .entry {
+.entry {
   color: #FFF;
   padding: 2rem;
-  background: rgba(16, 16, 16, 0.95);
-}
-
-.from {
-  margin-left: 2rem;
-  position: relative;
-}
-
-.from:before {
-  display: block;
-  content: '—';
-  position: absolute;
-  left: -2rem;
-}
-
-.intro h1, .intro h2, .intro .down a {
-  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
+  background: rgba(16, 16, 16, 0.90);
 }
 
 .intro h2, .intro .down a {
@@ -110,27 +112,6 @@ h1, h2, h3 {
   100%{ opacity:0.8; }
 }
 
-.entry:nth-child(3n+1) {
-  color: #101010;
-  background: rgba(9, 255, 195, 0.85);
-}
-
-.entry:nth-child(3n) {
-  color: #101010;
-  background: rgba(255, 5, 243, 0.85);
-}
-
-.entry:nth-child(3n+2) {
-  color: #FFF;
-  background: rgba(16, 16, 16, 0.95);
-}
-
-.entry h3 {
-  font-family: streamster;
-  font-size: 5rem;
-  font-weight: normal;
-}
-
 .two-column {
   position: relative;
   display: flex;
@@ -142,11 +123,6 @@ h1, h2, h3 {
   height: 100%;
   margin: 0 10%;
   z-index: 2;
-}
-
-.two-column section header {
-  font-family: streamster;
-  font-size: 3rem;
 }
 
 ul {
@@ -165,11 +141,7 @@ ul {
   z-index: 1;
 }
 
-blockquote {
-  margin: 0 auto;
-}
-
-.entry p, blockquote {
+.entry p {
   max-width: 80ch;
 }
 
