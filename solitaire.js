@@ -5,6 +5,10 @@ module.exports = function() {
     canvas.height = window.innerHeight;
     canvas.style.zIndex = 999;
     document.body.insertBefore(canvas, document.body.firstChild);
+    document.body.style.cursor = 'pointer';
+    setTimeout(function() {
+        throwCard(window.innerWidth/2, window.innerHeight/2);
+    }, 10);
 
     var context = canvas.getContext( '2d' );
 
