@@ -152,7 +152,7 @@ li em {
 /*some fading effects*/
 .two-column section {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 .two-column section.fade-in {
