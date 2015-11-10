@@ -10,3 +10,5 @@ setTimeout(function() {
 setTimeout(function() {
   sections[1].classList.add('fade-in');
 }, 600);
+
+require('./konami')(require('./solitaire'));
