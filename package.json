@@ -15,7 +15,6 @@
     "browserify": "^12.0.1"
   },
   "dependencies": {
-    "scroll-to": "0.0.2",
     "vivus": "^0.2.3"
   }
 }
