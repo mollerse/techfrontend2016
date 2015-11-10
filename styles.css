@@ -133,6 +133,20 @@ li em {
   font-size: 2rem;
 }
 
+.q-a div {
+  clear: both;
+  padding: 1rem 0;
+}
+
+.q-a div:nth-child(2n+1) {
+  text-align: right;
+  float: right;
+}
+
+.q-a div p {
+  text-align: left;
+}
+
 
 .topics li {
   margin-top: 20px;
@@ -144,7 +158,8 @@ li em {
 }
 
 .deadline h3 {
-  font-size: 1.5rem;
+  clear: both;
+  font-size: 2rem;
   text-align: center;
   color: #FF05F3;
 }
