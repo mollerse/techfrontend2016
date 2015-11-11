@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "beefy index.js:bundle.js --index:index.html",
-    "bundle": "browserify index.js -o bundle.js"
+    "bundle": "browserify index.js -o bundle.js -g uglifyify"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "beefy": "^2.1.5",
-    "browserify": "^12.0.1"
+    "browserify": "^12.0.1",
+    "uglifyify": "^3.0.1"
   },
   "dependencies": {
     "vivus": "^0.2.3"
