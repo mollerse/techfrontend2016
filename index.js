@@ -13,10 +13,24 @@ setTimeout(function() {
 
 require('./konami')(require('./solitaire'));
 
-setTimeout(function() {
-    var iframe = document.createElement('iframe');
+function createIfNotFound() {
+  var iframe = document.querySelector('iframe');
+  if(!iframe) {
+    iframe = document.createElement('iframe');
     iframe.width = 1;
     iframe.height = 1;
-    iframe.src = 'https://www.youtube.com/embed/ho-gZezFb4s?autoplay=1&loop=1&playlist=ho-gZezFb4s';
     document.body.appendChild(iframe);
-}, 1000*60*5);
+  }
+  iframe.src = 'https://www.youtube.com/embed/ho-gZezFb4s?autoplay=1&loop=1&playlist=ho-gZezFb4s';
+}
+
+function toggleWithSpace(e) {
+  if(e.keyCode === 32) {
+    e.preventDefault();
+    createIfNotFound();
+    document.removeEventListener('keydown', toggleWithSpace);
+  }
+}
+
+setTimeout(createIfNotFound, 1000*60*5);
+document.addEventListener('keydown', toggleWithSpace);
