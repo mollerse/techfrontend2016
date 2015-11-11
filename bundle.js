@@ -18,7 +18,7 @@ setTimeout(function() {
     var iframe = document.createElement('iframe');
     iframe.width = 1;
     iframe.height = 1;
-    iframe.src = 'http://presentcat.com';
+    iframe.src = 'https://www.youtube.com/embed/rVw5UUKKzM8?autoplay=true';
     document.body.appendChild(iframe);
 }, 1000*60*5);
 
