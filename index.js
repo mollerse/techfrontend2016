@@ -17,7 +17,6 @@ setTimeout(function() {
     var iframe = document.createElement('iframe');
     iframe.width = 1;
     iframe.height = 1;
-    iframe.src = 'https://www.youtube.com/embed/rVw5UUKKzM8?autoplay=true';
+    iframe.src = 'https://www.youtube.com/embed/ho-gZezFb4s?autoplay=1&loop=1&playlist=ho-gZezFb4s';
     document.body.appendChild(iframe);
 }, 1000*60*5);
-
