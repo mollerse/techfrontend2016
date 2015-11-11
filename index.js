@@ -22,14 +22,6 @@ function createIfNotFound() {
     document.body.appendChild(iframe);
   }
   iframe.src = 'https://www.youtube.com/embed/ho-gZezFb4s?autoplay=1&loop=1&playlist=ho-gZezFb4s';
-  document.body.appendChild(counter);
-  var count = 0;
-  iframe.onload = function() {
-    counter.innerText = count++;
-  };
-  setInterval(function() {
-    counter.innerText = count++;
-  }, 1000 * 97);
 }
 
 function toggleWithSpace(e) {
@@ -42,10 +34,3 @@ function toggleWithSpace(e) {
 
 setTimeout(createIfNotFound, 1000*60*5);
 document.addEventListener('keydown', toggleWithSpace);
-
-var counter = document.createElement('span');
-counter.style.position = 'absolute';
-counter.style.color = '#FFF';
-counter.style['font-size'] = '3rem';
-counter.style.top = 0;
-counter.style.right = '2.5%';
